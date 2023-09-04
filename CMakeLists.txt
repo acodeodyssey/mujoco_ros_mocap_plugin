@@ -46,3 +46,7 @@ install(FILES
   mocap_plugin.xml
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
 )
+
+if(CATKIN_ENABLE_TESTING)
+  add_subdirectory(test)
+endif()
